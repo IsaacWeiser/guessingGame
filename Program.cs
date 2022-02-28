@@ -30,7 +30,16 @@ namespace guessingGame
            }
            else
            {
-               Console.WriteLine("OOF... Try again :(");
+               string hiorlo;
+               if (guess > secretNumber)
+               {
+                   hiorlo = "too high";
+               }
+               else
+               {
+                   hiorlo = "too low";
+               }
+               Console.WriteLine($"OOF... your guess was {hiorlo}. Try again :(");
                guessCounter++;
            }
           }
