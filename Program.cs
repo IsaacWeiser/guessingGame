@@ -8,20 +8,27 @@ namespace guessingGame
         static void Main(string[] args)
         {
             
-            Console.WriteLine("Guess the secret number... uwu?");
+          int guessCounter =1;
+          while (guessCounter < 5)
+          {
+
+          Console.WriteLine("Guess the secret number... uwu?");
           int guess = int.Parse(Console.ReadLine());
-           Console.WriteLine($"your guess is {guess}");
-           int secretNumber = 42;
-           Console.Clear();
+           
+          int secretNumber = 42;
+           
 
            if (guess == secretNumber)
            {
                Console.WriteLine("congrats You Got It!");
+               guessCounter =5;
            }
            else
            {
                Console.WriteLine("OOF... Try again :(");
+               guessCounter++;
            }
+          }
         }
     }
 }
