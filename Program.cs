@@ -13,6 +13,7 @@ namespace guessingGame
           {
 
           Console.WriteLine("Guess the secret number... uwu?");
+          Console.WriteLine($"This is guess #{guessCounter}");
           int guess = int.Parse(Console.ReadLine());
            
           int secretNumber = 42;
